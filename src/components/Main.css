@@ -33,11 +33,11 @@
 @media (max-width: 769px) {
   .cover-img h1 {
     font-size: 1.5rem;
-    padding-left: 4rem;
+    padding-top: 20rem;
+    padding-left: 2rem;
   }
 
   .logo_container {
     padding-left: 3rem;
   }
-
 }

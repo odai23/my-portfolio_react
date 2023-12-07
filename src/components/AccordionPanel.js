@@ -12,16 +12,11 @@ function AccordionPanel({
   index,
   isExpandedState,
   setIsExpandedState,
+  handleOpenSliderProp, 
 }) {
   const handleAccordionClick = () => {
     setIsExpandedState(index);
   };
-
-  // const navigate = useNavigate();
-
-  // const handleGoButtonClick = () => {
-  //   navigate(`/AccordionGallery/${category}`);
-  // };
 
   return (
     <div className="accordion-panel">
@@ -51,7 +46,7 @@ function AccordionPanel({
           data-category={category}
         />
       </div>
-      <Link to={`/AccordionGallery/${category}`} className="go-button">
+      <Link to="#" className="go-button" onClick={handleOpenSliderProp}>
         <BsArrowUpRightSquare />
       </Link>
     </div>

@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
-import AccordionGallery from "./components/AccordionGallery";
+import ImageSlider from "./components/ImageSlider";
+import SlideData from "./components/SlideData";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
         <Route path="AboutPage" element={<AboutPage />} />
         <Route path="ContactPage" element={<ContactPage />} />
         <Route
-          path="/AccordionGallery/:category"
-          Component={AccordionGallery}
+          path="ImageSlider"
+          element={<ImageSlider slides={SlideData} />}
         />
       </Routes>
     </BrowserRouter>
