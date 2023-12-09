@@ -28,6 +28,7 @@ const ImageSlider = ({ slides, category, onClose }) => {
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
       {SlideData[category].map((slide, index) => {
         console.log(slide, index);
+        // this is the fix:
         return (
           <div
             className={index === current ? "slide active" : "slide"}
