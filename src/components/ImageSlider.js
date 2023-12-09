@@ -3,7 +3,7 @@ import { SlideData } from "./SlideData";
 import "./ImageSlider.css";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = ({ slides, category, onClose }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -21,15 +21,19 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <section className="slider">
+      <button className="close_button" onClick={() => onClose()}>
+        close
+      </button>
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-      {SlideData.map((slide, index) => {
+      {SlideData[category].map((slide, index) => {
+        console.log(slide, index);
         return (
           <div
             className={index === current ? "slide active" : "slide"}
             key={index}>
             {index === current && (
-              <img src={slide.image} alt="project photos" className="image" />
+              <img src={slide} alt="project photos" className="image" />
             )}
           </div>
         );

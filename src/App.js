@@ -13,10 +13,6 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="AboutPage" element={<AboutPage />} />
         <Route path="ContactPage" element={<ContactPage />} />
-        <Route
-          path="ImageSlider"
-          element={<ImageSlider slides={SlideData} />}
-        />
       </Routes>
     </BrowserRouter>
   );

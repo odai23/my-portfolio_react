@@ -80,8 +80,8 @@ import smichov6 from "./images/Smichov-city/6.jpg";
 import smichov7 from "./images/Smichov-city/7.jpg";
 import smichov8 from "./images/Smichov-city/8.jpg";
 
-export const SlideData = {
-  Luxury: [
+export const images = [
+  {
     luxury1,
     luxury2,
     luxury3,
@@ -92,9 +92,9 @@ export const SlideData = {
     luxury8,
     luxury9,
     luxury10,
-  ],
-  "Lounge-design": [lounge1, lounge2, lounge3, lounge4, lounge5],
-  Classic: [
+  },
+  { lounge1, lounge2, lounge3, lounge4, lounge5 },
+  {
     classic1,
     classic2,
     classic3,
@@ -103,8 +103,8 @@ export const SlideData = {
     classic6,
     classic7,
     classic8,
-  ],
-  Entrance: [
+  },
+  {
     entrance1,
     entrance2,
     entrance3,
@@ -115,8 +115,8 @@ export const SlideData = {
     entrance8,
     entrance9,
     entrance10,
-  ],
-  "Landscape-design": [
+  },
+  {
     landscape1,
     landscape2,
     landscape3,
@@ -125,8 +125,8 @@ export const SlideData = {
     landscape6,
     landscape7,
     landscape8,
-  ],
-  "Storey-building": [
+  },
+  {
     storeyBuilding1,
     storeyBuilding2,
     storeyBuilding3,
@@ -144,8 +144,8 @@ export const SlideData = {
     storeyBuilding15,
     storeyBuilding16,
     storeyBuilding17,
-  ],
-  Bathrooms: [
+  },
+  {
     bathroom1,
     bathroom2,
     bathroom3,
@@ -154,8 +154,8 @@ export const SlideData = {
     bathroom6,
     bathroom7,
     bathroom8,
-  ],
-  "Smichov-city": [
+  },
+  {
     smichov1,
     smichov2,
     smichov3,
@@ -164,41 +164,5 @@ export const SlideData = {
     smichov6,
     smichov7,
     smichov8,
-  ],
-};
-export default SlideData;
-
-// export const SlideData = [
-//   {
-//     image: luxury1,
-//   },
-//   {
-//     image: luxury2,
-//   },
-//   {
-//     image: luxury3,
-//   },
-//   {
-//     image: luxury4,
-//   },
-//   {
-//     image: luxury5,
-//   },
-//   {
-//     image: luxury6,
-//   },
-//   {
-//     image: luxury7,
-//   },
-//   {
-//     image: luxury8,
-//   },
-//   {
-//     image: luxury9,
-//   },
-//   {
-//     image: luxury10,
-//   },
-// ];
-
-// export default SlideData;
+  },
+];
