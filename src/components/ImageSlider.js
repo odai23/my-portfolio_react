@@ -21,24 +21,29 @@ const ImageSlider = ({ slides, category, onClose }) => {
 
   return (
     <section className="slider">
-      <button className="close_button" onClick={() => onClose()}>
-        close
-      </button>
-      <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-      {SlideData[category].map((slide, index) => {
-        console.log(slide, index);
-        // this is the fix: version 2
-        return (
-          <div
-            className={index === current ? "slide active" : "slide"}
-            key={index}>
-            {index === current && (
-              <img src={slide} alt="project photos" className="image" />
-            )}
-          </div>
-        );
-      })}
+      <div className="slider_container"></div>
+      <div className="close_wrapper">
+        <button className="close_button" onClick={() => onClose()}>
+          close
+        </button>
+      </div>
+      <div className="slider_wrapper">
+        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+        {SlideData[category].map((slide, index) => {
+          console.log(slide, index);
+          // this is the fix: version 2
+          return (
+            <div
+              className={index === current ? "slide active" : "slide"}
+              key={index}>
+              {index === current && (
+                <img src={slide} alt="project photos" className="image" />
+              )}
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 };
