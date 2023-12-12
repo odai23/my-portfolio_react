@@ -94,7 +94,7 @@ export const SlideData = {
     luxury10,
   ],
   "Lounge-design": [lounge1, lounge2, lounge3, lounge4, lounge5],
-  Classic: [
+  "Classic-villa": [
     classic1,
     classic2,
     classic3,
@@ -167,38 +167,3 @@ export const SlideData = {
   ],
 };
 export default SlideData;
-
-// export const SlideData = [
-//   {
-//     image: luxury1,
-//   },
-//   {
-//     image: luxury2,
-//   },
-//   {
-//     image: luxury3,
-//   },
-//   {
-//     image: luxury4,
-//   },
-//   {
-//     image: luxury5,
-//   },
-//   {
-//     image: luxury6,
-//   },
-//   {
-//     image: luxury7,
-//   },
-//   {
-//     image: luxury8,
-//   },
-//   {
-//     image: luxury9,
-//   },
-//   {
-//     image: luxury10,
-//   },
-// ];
-
-// export default SlideData;

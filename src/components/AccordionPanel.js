@@ -19,9 +19,7 @@ function AccordionPanel({
   };
   const [popUpSlider, setPopUpSlider] = React.useState(false);
 
-  const openSlider = (e) => {
-    console.log(`click`);
-    console.log(popUpSlider);
+  const openSlider = () => {
     setPopUpSlider(!popUpSlider);
   };
 
