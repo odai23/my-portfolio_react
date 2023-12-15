@@ -7,6 +7,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { FaBloggerB } from "react-icons/fa";
 
 const Footer = () => {
+  let year = new Date();
   return (
     <footer className="footer-container">
       <div className="footer-links">
@@ -27,7 +28,9 @@ const Footer = () => {
           <FaBloggerB className="icon" />
         </Link>
       </div>
-      <p className="copy">All rights reserved &copy; Odai Merheg</p>
+      <p className="copy">
+        All rights reserved &copy;{year.getFullYear()} Odai Merheg
+      </p>
     </footer>
   );
 };
